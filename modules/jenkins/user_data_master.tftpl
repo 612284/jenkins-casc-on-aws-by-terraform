@@ -151,7 +151,7 @@ jobs:
 EOF
 
 cat <<EOF> /home/ubuntu/jcasc/Dockerfile
-FROM jenkins/jenkins:2.364
+FROM jenkins/jenkins:2.387.3
 ENV JAVA_OPTS -Djenkins.install.runSetupWizard=false
 ENV CASC_JENKINS_CONFIG /var/jenkins_home/casc.yaml
 COPY --chown=jenkins:jenkins plugins.txt /usr/share/jenkins/ref/plugins.txt
